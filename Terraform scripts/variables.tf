@@ -1,12 +1,18 @@
 
 variable "aws_iam_access_key" {
-    default = "AKIA3JVCGHMA56CGP2E6"
+    default = "AKIA3JVCGHMAS7WGITBE"
   
 }
 
 variable "aws_iam_secret_key" {
-    default = "Xl1iJFy9poyb3ip2AzFSqdrIldjNHgxrLRC4X46b"
+    default = "Xce3IRiIOH/3ED+QGhxym2daveK4g6HrZkwjh83m"
 }
+
+variable "region" {
+	default = "ap-south-1"
+  
+}
+
 variable "vpc_cidr" {
 	default = "10.20.0.0/16"
 }
@@ -24,4 +30,28 @@ variable "private_subnets_cidr" {
 variable "azs" {
 	type = list
 	default = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
+}
+
+variable "description" {
+	default = "Allowed from Terraform-new"
+  
+}
+
+variable "ip" {
+	default = "0.0.0.0/0"
+}
+
+variable "ip2" {
+	default = "112.32.43.4/32"
+  
+}
+
+variable "ip3" {
+	default = "112.33.43.4/32"
+  
+}
+
+variable "ip4" {
+	default = "112.33.43.4/32"
+  
 }
