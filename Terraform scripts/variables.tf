@@ -51,7 +51,3 @@ variable "ip3" {
   
 }
 
-variable "ip4" {
-	default = "112.33.43.4/32"
-  
-}
